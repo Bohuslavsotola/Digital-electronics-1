@@ -16,7 +16,7 @@ First Header | Second Header
 ------------ | -------------
 First Header | Second Header
 
-Some basic Git commands are:
+CODE:
 ```
 git status
 git add
