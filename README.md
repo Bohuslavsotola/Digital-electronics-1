@@ -19,7 +19,7 @@ First Header | Second Header
 CODE:
 
 
-```javascript
+```vhdl
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:'#foo'})
