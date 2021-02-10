@@ -17,7 +17,7 @@ First Header | Second Header
 First Header | Second Header
 
 CODE:
-```
+```VHDL
 $ cd d:/Documents/
 $ mkdir your-name
 $ cd your-name/
