@@ -18,11 +18,6 @@ First Header | Second Header
 
 CODE:
 
-```vhdl
-$ cd d:/Documents/
-$ mkdir your-name
-$ cd your-name/
-```
 
 ```javascript
 function fancyAlert(arg) {
