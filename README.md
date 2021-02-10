@@ -18,7 +18,7 @@ First Header | Second Header
 
 CODE:
 ```
-git status
-git add
-git commit
+$ cd d:/Documents/
+$ mkdir your-name
+$ cd your-name/
 ```
