@@ -16,6 +16,9 @@ First Header | Second Header
 ------------ | -------------
 First Header | Second Header
 
-$ cd d:/Documents/
-
-$ mkdir your-name
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
