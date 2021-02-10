@@ -16,20 +16,13 @@ First Header | Second Header
 ------------ | -------------
 First Header | Second Header
 
-library ieee; -- 2
+CODE:
 
-use ieee.std_logic_1164.all; -- 3
 
--- 4
-
-entity majorita is -- 5
-
-port -- 6
-
-( a, b, c : in std_logic; -- 7
-
-y : out std_logic -- 8
-
-); -- 9
-
-end;
+```vhdl
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
