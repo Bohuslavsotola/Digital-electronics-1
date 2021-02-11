@@ -12,7 +12,7 @@ begin
 
 end architecture dataflow;
 ```
-![Demorgan Sim](Images/DemorganSimulation.png)
+![Demorgan Sim](images/DemorganSimulation.png)
 
 https://www.edaplayground.com/x/R39n
 
