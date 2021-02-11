@@ -1,9 +1,29 @@
-<<<<<<< HEAD
+
 #### De Morgan's laws simulation
 
 ```vhdl
+architecture dataflow of gates is
+begin
+    f_o  <= ((not b_i) and a_i) or ((not c_i) and (not b_i));
+    fnand_o <= not(not (not b_i and a_i) and not(not b_i and not c_i));
+    fnor_o <=not(b_i or not(a_i)) or not(c_i or b_i);
+   -- fand_o <= a_i and b_i;
+   -- fxor_o <= a_i xor b_i;
 
+end architecture dataflow;
 ```
-=======
+![Demorgan Sim](images/Demorgan Simulation.png)
 
->>>>>>> d94c63adbbb8f88b8fde45ec6bfb6a654ab7a828
+https://www.edaplayground.com/x/R39n
+
+| **c** | **b** |**a** | **f(c,b,a)** |
+| :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 0 |
+
