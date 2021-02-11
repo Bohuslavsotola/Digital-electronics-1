@@ -12,6 +12,7 @@ begin
 
 end architecture dataflow;
 ```
+
 ![Demorgan Sim](images/DemorganSimulation.png)
 
 #### Odkaz na první úkol
@@ -37,9 +38,10 @@ begin
     f2_o  <= (x_i and (y_i or z_i));
     f3_o  <= ((x_i or y_i) and (x_i or z_i));
     f4_o  <= (x_i or (y_i and z_i));
-  ``` 
+  
 
 end architecture dataflow;
+``` 
 
 #### Odkaz na druhý úkol
 https://www.edaplayground.com/x/NE6z
