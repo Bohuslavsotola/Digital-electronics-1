@@ -30,6 +30,9 @@ https://www.edaplayground.com/x/R39n
 | 1 | 1 | 1 | 0 |
 
 ### Druhý úkol
+
+#### Distributive laws
+
 ```vhdl
 architecture dataflow of gates is
 begin
