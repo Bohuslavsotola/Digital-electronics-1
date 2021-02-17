@@ -28,7 +28,7 @@ https://www.edaplayground.com/x/p5t8
 ### Druhý úkol
 
 #### B < A
-![Demorgan Sim](images/BjemensinezAn.png)
+![Demorgan Sim](images/BjemensinezA.png)
 
 #### B = A
 ![Demorgan Sim](images/BjerovnoA.png)
