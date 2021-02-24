@@ -3,6 +3,8 @@
 
 ### Druhý úkol
 
+![Demorgan Sim](images/simulace.png)
+
 #### mux_2bit_4to1
 ```vhdl
 architecture Behavioral of mux_2bit_4to1 is
