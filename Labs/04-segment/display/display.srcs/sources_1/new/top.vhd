@@ -69,6 +69,10 @@ hex2seg : entity work.hex_7seg
         AN <= "11110111";
         
          -- Display input value
-        LED(3 downto 0) <= SW;
+   LED(3 downto 0) <= SW;
+   LED(4)  <= '1' when (SW = "0000") else '0';
+   LED(5)  <= '1' when (SW > "1001") else '0';
+   LED(6)  <= '1' when (SW = "0001" or SW = "0011" or SW = "0101" or SW = "0111" or SW = "1001" or SW = "1011" or SW = "1101" or SW = "1111") else '0';
+   LED(7)  <= '1' when (SW = "0001" or SW = "0010" or SW = "0100" or SW = "1000") else '0';
 
 end Behavioral;
