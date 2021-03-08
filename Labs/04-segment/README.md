@@ -5,6 +5,7 @@
 
 
  * Decoder truth table for common anode 7-segment display.
+ 
 | **Hex** | **Inputs** | **A** | **B** | **C** | **D** | **E** | **F** | **G** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
@@ -154,6 +155,7 @@ hex2seg : entity work.hex_7seg
 ### Třetí úkol
 
 * Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting
+
 | *Hex* | *Inputs* | *LED4* | *LED5* | *LED6* | *LED7* |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 |1  |0  |0  | 0 |
