@@ -149,7 +149,7 @@ hex2seg : entity work.hex_7seg
 | *Hex* | *Inputs* | *LED4* | *LED5* | *LED6* | *LED7* |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 |1  |0  |0  | 0 |
-| 1 | 0001 | 0 |0  |1  | 0 |
+| 1 | 0001 | 0 |0  |1  | 1 |
 | 2 | 0010 | 0 |0  |0  | 1 |
 | 3 | 0011 | 0 |0  |1  | 0 |
 | 4 | 0100 |0  |0  |0  | 1 |
@@ -163,4 +163,19 @@ hex2seg : entity work.hex_7seg
 | C | 1100 |0  |1  |0  | 0 |
 | d | 1101 |0  |1  |1  | 0 |
 | E | 1110 |0  |1  |0  | 0 |
-| F | 1111 |0  |1  |1  | 1 |
+| F | 1111 |0  |1  |1  | 0 |
+
+![Demorgan Sim](images/simulacetretiukol.png)
+
+#### Podmínka v top.vhd
+
+```vhdl
+ AN <= b"0111_1111";
+        
+         -- Display input value
+   LED(3 downto 0) <= SW;
+   LED(4)  <= '1' when (SW = "0000") else '0';
+   LED(5)  <= '1' when (SW > "1001") else '0';
+   LED(6)  <= '1' when (SW = "0001" or SW = "0011" or SW = "0101" or SW = "0111" or SW = "1001" or SW = "1011" or SW = "1101" or SW = "1111") else '0';
+   LED(7)  <= '1' when (SW = "0001" or SW = "0010" or SW = "0100" or SW = "1000") else '0';
+```

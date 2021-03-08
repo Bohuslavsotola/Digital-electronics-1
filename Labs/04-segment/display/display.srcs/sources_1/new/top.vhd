@@ -66,7 +66,8 @@ hex2seg : entity work.hex_7seg
             
         );
 
-        AN <= "11110111";
+
+        AN <= b"0111_1111";
         
          -- Display input value
    LED(3 downto 0) <= SW;

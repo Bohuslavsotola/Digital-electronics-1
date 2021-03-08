@@ -1,8 +1,7 @@
-----------------------------------------------------------------------------------
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 07.03.2021 08:17:41
+-- Create Date: 05.03.2021 19:49:24
 -- Design Name: 
 -- Module Name: tb_top - Behavioral
 -- Project Name: 
@@ -36,38 +35,75 @@ entity tb_top is
 end tb_top;
 
 architecture Behavioral of tb_top is
- signal SW       : std_logic_vector(4 - 1 downto 0);
- signal LED      : std_logic_vector(8 - 1 downto 0);
- signal AN       : std_logic_vector(8 - 1 downto 0);
- signal CA       : STD_LOGIC;
- signal CB       : STD_LOGIC;
- signal CC       : STD_LOGIC;
- signal CD       : STD_LOGIC;
- signal CE       : STD_LOGIC;
- signal CF       : STD_LOGIC;
- signal CG       : STD_LOGIC;
+
+    signal s_SW : STD_LOGIC_VECTOR (4 - 1 downto 0); -- Input binary data
+    signal s_CA : STD_LOGIC; -- 	Cathod A
+    signal s_CB : STD_LOGIC; -- 	Cathod B
+    signal s_CC : STD_LOGIC; -- 	Cathod C
+    signal s_CD : STD_LOGIC; -- 	Cathod D
+    signal s_CE : STD_LOGIC; -- 	Cathod E
+    signal s_CF : STD_LOGIC; -- 	Cathod F
+    signal s_CG : STD_LOGIC; -- 	Cathod G
+        
+    signal s_LED : STD_LOGIC_VECTOR (8 - 1 downto 0); -- LED indicators
+    signal s_AN  : STD_LOGIC_VECTOR (8 - 1 downto 0); -- Common anode signals to individual displays
+
 begin
 
--- Connecting testbench signals with comparator_2bit entity (Unit Under Test)
-    uut_comparator_2bit : entity work.top
+    uut_top : entity work.top
         port map(
-            SW_i           => SW,
-            LED_o          => seg,
-            AN_o           => AN
-            
-           
+            SW           => s_SW,
+            CA           => s_CA,
+            CB           => s_CB,
+            CC           => s_CC,
+            CD           => s_CD,
+            CE           => s_CE,
+            CF           => s_CF,
+            CG           => s_CG,
+            LED          => s_LED,
+            AN           => s_AN
         );
 
-  p_stimulus : process
+p_stimulus : process
     begin
-        -- Report a note at the beginning of stimulus process
+        -- Report a note at the begining of stimulus process
         report "Stimulus process started" severity note;
 
+        s_SW <= "0000"; wait for 100 ns;
+        
+        s_SW <= "0001"; wait for 100 ns;
+        
+        s_SW <= "0010"; wait for 100 ns;
+        
+        s_SW <= "0011"; wait for 100 ns;
+        
+        s_SW <= "0100"; wait for 100 ns;
        
+        s_SW <= "0101"; wait for 100 ns;
+        
+        s_SW <= "0110"; wait for 100 ns;
+        
+        s_SW <= "0111"; wait for 100 ns;
+        
+        s_SW <= "1000"; wait for 100 ns;
+        
+        s_SW <= "1001"; wait for 100 ns;
+        
+        s_SW <= "1010"; wait for 100 ns;
+        
+        s_SW <= "1011"; wait for 100 ns;
+        
+        s_SW <= "1100"; wait for 100 ns;
+        
+        s_SW <= "1101"; wait for 100 ns;
+        
+        s_SW <= "1110"; wait for 100 ns;
+        
+        s_SW <= "1111"; wait for 100 ns;
+
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
-
 
 end Behavioral;
