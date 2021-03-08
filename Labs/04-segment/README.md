@@ -1,7 +1,10 @@
 ### První úkol
 
+ * Figure or table with connection of 7-segment displays on Nexys A7 board,
 ![Demorgan Sim](images/led.png)
 
+
+ * Decoder truth table for common anode 7-segment display.
 | **Hex** | **Inputs** | **A** | **B** | **C** | **D** | **E** | **F** | **G** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
@@ -23,6 +26,7 @@
 
 ### Druhý úkol
 
+* Listing of VHDL architecture from source file `hex_7seg.vhd` with syntax highlighting
 ```vhdl
 --------------------------------------------------------------------
     -- p_7seg_decoder:
@@ -83,6 +87,7 @@
     end process p_7seg_decoder;
 ```
 
+* Listing of VHDL stimulus process from testbench file `tb_hex_7seg.vhd` with syntax highlighting and asserts
 ```vhdl
 p_stimulus : process
     begin
@@ -127,8 +132,10 @@ p_stimulus : process
         wait;
 ```
 
+* Screenshot with simulated time waveforms; always display all inputs and outputs,
 ![Demorgan Sim](images/simulace.png)
 
+* Listing of VHDL code from source file `top.vhd` with 7-segment module instantiation.
 ```vhdl
 hex2seg : entity work.hex_7seg
         port map(
@@ -146,6 +153,7 @@ hex2seg : entity work.hex_7seg
 
 ### Třetí úkol
 
+* Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting
 | *Hex* | *Inputs* | *LED4* | *LED5* | *LED6* | *LED7* |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 |1  |0  |0  | 0 |
@@ -165,7 +173,6 @@ hex2seg : entity work.hex_7seg
 | E | 1110 |0  |1  |0  | 0 |
 | F | 1111 |0  |1  |1  | 0 |
 
-![Demorgan Sim](images/simulacetretiukol.png)
 
 #### Podmínka v top.vhd
 
@@ -179,3 +186,6 @@ hex2seg : entity work.hex_7seg
    LED(6)  <= '1' when (SW = "0001" or SW = "0011" or SW = "0101" or SW = "0111" or SW = "1001" or SW = "1011" or SW = "1101" or SW = "1111") else '0';
    LED(7)  <= '1' when (SW = "0001" or SW = "0010" or SW = "0100" or SW = "1000") else '0';
 ```
+
+* Screenshot with simulated time waveforms; always display all inputs and outputs
+![Demorgan Sim](images/simulacetretiukol.png)
