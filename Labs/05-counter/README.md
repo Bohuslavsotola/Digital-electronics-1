@@ -10,8 +10,9 @@
 | BTND | P18 | 
 | BTNC | N17 |
 
-* Table with calculated values.
+
 * Při sepnutí tlačítka nastává úroveň 3,3 V. Jinak je úroveň 0V.
+
  ![Demorgan Sim](images/led.png)
  
 | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
