@@ -1,7 +1,6 @@
  ### První úkol
 
-* Při sepnutí tlačítka nastává úroveň 3,3 V. Jinak je úroveň 0V.
-
+* Figure or table with connection of push buttons on Nexys A7 board
 | **Button** | **Connection** 
 | :-: | :-: |
 | BTNL | P17 |
@@ -10,8 +9,8 @@
 | BTND | P18 | 
 | BTNC | N17 |
 
-
-
+* Table with calculated values.
+* Při sepnutí tlačítka nastává úroveň 3,3 V. Jinak je úroveň 0V.
  ![Demorgan Sim](images/led.png)
  
 | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
@@ -25,6 +24,8 @@
 
 
 ### Druhý úkol
+
+* Listing of VHDL code of the process `p_cnt_up_down` with syntax highlighting.
 
 ```vhdl
  p_cnt_up_down : process(clk)
@@ -51,7 +52,7 @@
 ```
 
 
-
+ * Listing of VHDL reset and stimulus processes from testbench file `tb_cnt_up_down.vhd` with syntax highlighting and asserts
 
 ```vhdl
    --------------------------------------------------------------------
@@ -93,10 +94,13 @@
         wait;
     end process p_stimulus;
 ```
+ * Screenshot with simulated time waveforms; always display all inputs and outputs,
 
 ![Demorgan Sim](images/cutupdown1.png)
 
 ### Třetí úkol
+
+ * Listing of VHDL code from source file `top.vhd` with all instantiations for the 4-bit bidirectional counter.
 
 ```vhdl
  --------------------------------------------------------------------
@@ -149,3 +153,6 @@
     -- Connect one common anode to 3.3V
     AN <= b"1111_1110";
 ```
+ * Image of the top layer including both counters, ie a 4-bit bidirectional counter from Part 4 and a 16-bit counter with a 10 ms time base from Part Experiments on your own. The image can be drawn on a computer or by hand.
+
+![Demorgan Sim](images/schema.png)
