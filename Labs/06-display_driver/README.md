@@ -59,7 +59,7 @@
 
 * Screenshot with simulated time waveforms; always display all inputs and outputs.
 
-![Demorgan Sim](images/simulaceok.png)
+![Demorgan Sim](images/simulaceok1.png)
 
 * Listing of VHDL architecture of the top layer.
 
