@@ -123,3 +123,4 @@ end architecture Behavioral;
 ### Třetí úkol
 
 * Image of the driver schematic. The image can be drawn on a computer or by hand.
+![Demorgan Sim](images/8digit.jpg)
