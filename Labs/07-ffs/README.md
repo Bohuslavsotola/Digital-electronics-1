@@ -460,3 +460,7 @@ p_clk_gen : process
 ![Demorgan Sim](images/t_ff_rst.png)
 
 ### Čtvrtý úkol
+
+*Image of the shift register schematic. The image can be drawn on a computer or by hand. Name all inputs, outputs, components and internal signals.
+
+![Demorgan Sim](images/shift.jpg)
