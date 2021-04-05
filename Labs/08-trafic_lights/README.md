@@ -1,4 +1,4 @@
-### První úkol
+### Preparation tasks (done before the lab at home)
 
 Fill in the table with the state names and output values accoding to the given inputs. Let the reset has just been applied.
 
@@ -19,7 +19,7 @@ Figure with connection of RGB LEDs on Nexys A7 board and completed table with co
 | LD17 | N16, R11, G14 | `1,0,0` | `0,1,1` | `0,0,1` |
 
 
-### Druhý úkol
+### Traffic light controller
 
 State diagram
 
@@ -172,7 +172,7 @@ Listing of VHDL code of combinatorial process p_output_fsm with syntax highlight
 Screenshot(s) of the simulation, from which it is clear that controller works correctly
 ![Demorgan Sim](images/graf2.png)
 
-### Třetí úkol
+### Smart controller
 
 State table
 
