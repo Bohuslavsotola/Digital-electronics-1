@@ -23,7 +23,8 @@ Figure with connection of RGB LEDs on Nexys A7 board and completed table with co
 
 State diagram
 
-//zde dám fotku diagramu (už mám nakresleno)
+
+![Demorgan Sim](images/schema1.jpg)
 
 Listing of VHDL code of sequential process p_traffic_fsm with syntax highlighting
 
@@ -188,7 +189,7 @@ State table
 
 
 State diagram
-
+![Demorgan Sim](images/schema2.jpg)
 
 Listing of VHDL code of sequential process p_smart_traffic_fsm with syntax highlighting
 
@@ -332,7 +333,7 @@ Listing of VHDL code of sequential process p_smart_traffic_fsm with syntax highl
             end if;
   end if;
 
---end if;
+    --end if;
           
         -- Rising edge
     end process p_smart_traffic_fsm;
